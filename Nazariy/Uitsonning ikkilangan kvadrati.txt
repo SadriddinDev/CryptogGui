@@ -1,0 +1,76 @@
+
+	                         Uinstonning ikkilangan kvadrati
+1854 yil angliyalik Charl’z Uinston bigrammalarni shifrlashning yangi metodini o`ylab  topdi  va  shu  
+tariqa  kriptografiya  rivojiga  o`z hissasini  qo`shdi.  U   polibian shifrga o`xshash bo`lgani uchun 
+‘ikkilangan kvadrat’ deb nomlanadi. Uinston shifri kriptografiya tarixida  yangi bosqichni ochib berdi. 
+Polibian shifridan farqli ravishda ‘ikkilangan  kvadrat’  shifrlash  usulida  ikkita  jadvaldan  foydalanilgan.  
+Bu  jadvallar gorizontal  joylashgan  bo`lib,  shifrlash  Pleyfor  shifri singari  bigrammalar  bo`yicha 
+shifrlanadi. Murakkab bo`lmagan modifikatsiyalar orqali qo`lda shifrlash juda qulay bo`lib, kriptografiyada ishonchli yangi 
+kriptografik tizimini dunyoga keltirdi. Bu usul juda  ishonchli  bo`lgani uchun  undan  Germaniyada  hattoki 
+ ikkinchi  jahon  urushida ham  foydalanilgan. Axborotni  shifrlash  uchun  kirill  alfaviti  harflari  ixtiyoriy joylashgan
+ikkita jadval olingan. 
+
+Matnni  Uinstonning  ‘ikkilangan  kvadrat’  usulida  shifrlash. Lotin  alfaviti harflarida berilgan matnni 
+shifrlash algoritmini misol orqali tavsiflaymiz. U quyidagi qadamlardan iborat:
+1) Lotin alfaviti harflari va tinish belgilarini berilish tartibi belgilab olinadi.  Ular 40  ta.
+A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,  ', ., , , ?, !, =, +, -, :, ';', '‘',' (', ')', '%') 
+harf va belgilardan tashkil topgan alfavitni tanlaymiz.
+
+2)Har  bir  jadval  uchun  alohida  kalit  so`z  tanlanadi.
+(Kalit  so`z  uzunligi katta bo`lsa, shifrlash bardoshliligi yuqori bo`ladi.)  
+
+Chap  jadval  uchun  kalit  so`zi:  Muhammad O`ng  jadval  uchun  kalit  so`zi:  Majidov
+ 
+Eslatma:Kalitlar aslo bir hil bolmasligi kerak!!!
+
+Kalit  so`zlardagi navbatdagi takrorlanuvchi harflar tushirib qoldiriladi
+
+Chap jadval uchun takrorlanuvchi harflari tushirib qoldirilgan kalit so`zi:Muhad
+
+O`ng jadval uchun takrorlanuvchi harflari tushirib qoldirilgan kalit so`zi:Majidov
+
+Belgilar  soni  40 ta, shuning  uchun  jadval  o`lchamini  5x8  deb  kelishib olamiz.
+ 		  Birinchi jadval              Ikkinchi jadval
+		 -- -- -- -- -- -- -- -     -- -- -- -- -- -- -- --
+		|M  U  H  A  D  B  C  E|    |M  A  J  I  D  O  V  B |
+		|F  G  I  J  K  L  N  O|    |C  E  F  G  H  K  L  N |
+		|P  Q  R  S  T  V  W  X|    |P  Q  R  S  T  U  W  X |
+		|Y  Z     .  ,  ?  !  =|    |Y  Z     .  ,  ?  !  = |
+		|+  -  :  ;  "  (  )  %|    |+  -  :  ;  "  (  )  % |
+                 -- -- -- -- -- -- -- --     - -- -- -- -- -- -- -- -
+              
+3. Quyida berilgan xabarni shifrlang:
+
+Dasturchilar
+
+4. Berilgan xabar bigrammalarga bo`linadi.
+Xabarni bigrammalarga bo`lamiz (Probel uchun _ belgi qo`yamiz):
+DA ST UR CH IL AR
+FORMULA 
+Shifrlash uchun :
+1- xol Matnni A[i][j] B[i][k] bo'lsa,ya'ni mos satrlari teng bo'lsa Shifrni B[i][j] A[i][k] olinadi,
+2- xol Matnni A[i][j] B[g][k] bo'lsa,ya'ni mos satrlari teng bo'lmasa Shifrni B[i][k] A[g][j] olinadi. 
+Deshifrlash uchun :
+1- xol Shifr B[i][j] A[i][k] bo'lsa,ya'ni mos satrlari teng bo'lsa Shifrni A[i][j] B[i][k] olinadi,
+2- xol Shifr B[i][j] A[g][k] bo'lsa,ya'ni mos satrlari teng bo'lmasa Shifrni A[i][k] B[g][j] olinadi. 
+
+Demak Shifrlashda birinchi A <-> B = B<->A   
+Deshifrlashda esa B <-> A = A <-> B bo'ladi.
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
